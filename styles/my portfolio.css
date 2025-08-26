@@ -1,0 +1,309 @@
+      body {
+        margin: 0;
+        background-color: #0D1B2A;
+        margin-bottom: 200px;
+        font-family: "Roboto", sans-serif;
+        font-weight: 900;
+      }
+
+      .head-bar {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        height: 60px;
+      }
+
+      .logo {
+        color: #2DA8F7;
+        font-size: 30px;
+        padding-left: 22px;
+      }
+
+      .nav-bar {
+        display: flex;
+        font-size: 17px;
+        cursor: pointer;
+        color: #186FAF;
+      }
+
+      .home,
+      .about,
+      .projects,
+      .contact   {
+       margin-right: 28px;
+      }
+
+      .home .tooltips,
+      .about .tooltips,
+      .projects .tooltips,
+      .contact .tooltips {
+        position: absolute;
+        color: #D1D5DB;
+        border: 2px solid #186FAF;
+        padding-top: 2px;
+        padding-bottom: 2px;
+        padding-left: 7px;
+        padding-right: 7px;
+        border-radius: 3px; 
+        pointer-events: none;
+        font-size: 12px;
+        margin-top: 30px;
+        margin-right: 8px;
+        opacity: 0;
+        transition: opacity 0.15s;
+      }
+      .home:hover .tooltips,
+      .about:hover .tootips,
+      .projects:hover .tooltips,
+      .contact:hover .tooltips {
+        opacity: 1;
+      }
+
+      .home-page {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        height: 500px;
+      }
+
+      .picture-container {
+        width: 200px;
+        height: 200px;
+        border-radius: 100px;
+        overflow: hidden;
+      }
+
+      .pics {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+
+      .hello {
+        display: flex;
+        color: #D1D5DB;
+        font-size: 40px;
+      }
+
+      .name {
+        color: #2DA8F7;
+        padding-left: 10px;
+      }
+
+      .about-me,
+      .welcome-to-my-portfolio-text {
+        color: #D1D5DB;
+        font-size: 22px;
+        font-weight: 700;
+      }
+
+      .view-my-work-button {
+        margin-top: 15px;
+        background-color: #186FAF;
+        color: #D1D5DB;
+        border: none;
+        border-radius: 25px;
+        height: 50px;
+        width: 150px;
+        cursor: pointer;
+        transition: background-color 0.15s;
+
+        font-family: "Roboto", sans-serif;
+        font-weight: 900;
+      }
+
+      .view-my-work-button:hover {
+        background-color: #1E90D6;
+      }
+
+      .view-my-work-button:active {
+        background-color: #2DA8F7;
+      }
+
+      .my-projects {
+        margin-top: 120px;
+        margin-left: 75px;
+        margin-right: 75px;
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        border: 2px solid blue;
+
+        height: 500px;
+        width: 1200px;
+      }
+
+      .projects-text {
+        font-family: "Roboto", sans-serif;
+        font-weight: 900;
+        font-size: 30px;
+        color: #2DA8F7;
+      }
+
+      .project-container {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-evenly;
+
+        height: 500px;
+        width: 1200px;
+      }
+
+      .each-project-container {
+        border: 1px solid white;
+
+        height: 350px;
+        width: 360px;
+
+        margin-bottom: 30px;
+      }
+
+      .each-project-image {
+        width: 360px;
+        height: 175px;
+        object-fit: cover;
+      }
+
+      .project-title {
+        font-family: "Roboto", sans-serif;
+        font-weight: 900;
+        font-size: 20px;
+        color: #2DA8F7;
+        margin-left: 10px;
+        margin-top: 2px;
+      }
+
+      .project-descrip {
+        font-family: "Roboto", sans-serif;
+        font-weight: 900;
+        font-size: 16px;
+        margin-left: 10px;
+        color: #D1D5DB;
+        margin-bottom: 5px;
+      }
+
+      .html-button,
+      .css-button,
+      .javascript-button {
+        background-color: #186FAF;
+        color: #D1D5DB;
+        border: none;
+        height: 35px;
+        width: 80px;
+        border-radius: 17px;
+        margin-right: 8px;
+        margin-left: 15px;
+        margin-top: 15px;
+        cursor: pointer;
+        font-family: "Roboto", sans-serif;
+        font-weight: 900;
+        transition: background-color 0.15s;
+
+      }
+
+       .html-button:hover {
+        background-color: #1E90D6;
+        color: #D1D5DB;
+      }
+
+      .html-button:active {
+        background-color: #2DA8F7;
+        color: #D1D5DB;
+      }
+
+       .css-button:hover,
+       .javascript-button:hover {
+        background-color: #1E90D6;
+        color: #D1D5DB;
+      }
+
+      .css-button:active,
+      .javascript-button:active {
+        background-color: #2DA8F7;
+        color: #D1D5DB;
+      }
+
+      .my-contact {
+        font-family: "Roboto", sans-serif;
+        font-weight: 900;
+        margin-top: 120px;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+
+        border: 2px solid blue;
+        width: 1200px;
+        height: 600px;
+        margin-left: 75px;
+        margin-right: 75px;
+
+        font-size: 20px;
+        color: #D1D5DB;
+      }
+
+      .lets-work-together-text {
+        font-size: 40px;
+        color: #2DA8F7; 
+      }
+
+      .social-media-link,
+      .social-media-links {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        width: 1200px;
+        height: 10px;
+        font-size: 20px;
+        margin-bottom: 100px;
+      }
+
+      a {
+        text-decoration: none;
+        color: #186FAF;
+        transition: color 0.15s;
+
+      }
+
+      a:hover {
+        color: #1E90D6;
+      }
+
+      a:active {
+        color: #2DA8F7;
+      }
+
+      .reach-out-container {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        width: 1200px;
+        height: 60px;
+      }
+
+      .input-text,
+      .send-message-button {
+        width: 900px;
+        height: 60px;
+        border: none;
+        border-radius: 4px;
+        margin-bottom: 70px;
+        margin-left: 40px;
+        background-color: #186FAF;
+        color: #D1D5DB;
+        font-family: "Roboto", sans-serif;
+        font-weight: 900;
+        padding-left: 10px;
+      }
+
+      .send-message-button {
+        width: 150px;
+        cursor: pointer;
+        margin-right: 20px;
+      }
